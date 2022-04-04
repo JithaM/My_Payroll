@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Suite">
+<listeners>
+<listener class-name="baseClass.Listeners"></listener>
+</listeners>
+  <test thread-count="5" name="Test">
+<classes>
+
+<!-- --><class name="bible.DeductionTest">
+<methods>
+<include name="adddeduction"></include>
+</methods>
+</class>
+<!-- --><class name="bible.ClientTest">
+<methods>
+<include name="clientcreate"></include>
+<include name="searchclientname"></include>
+<include name="searchclientid"></include>
+<include name="verifysearchclientnameidoption"></include>
+<include name="clientsearchviewoption"></include>
+<include name="clientsearcheditoption"></include>
+<include name="clientresetnameidsearch"></include>
+<include name="TC_10editclientdetails"></include>
+</methods>
+</class>
+<!-- --><class name="bible.HomeTest">
+<methods>
+<include name="homepagevisible"></include>
+</methods>
+</class>
+<!-- --><class name="bible.InvoiceverifyTest">
+<methods>
+<include name="invoiceverify"></include>
+</methods>
+</class>
+<!-- --><class name="bible.LoginTest">
+<methods>
+<include name="verifyuserloginwithvalidcredentials"></include>
+<include name="verifyuserloginwithinvalidcredentials"></include>
+</methods>
+</class>
+<!-- --><class name="bible.PayslipCreateTest">
+<methods>
+<include name="payslipscreate"></include>
+</methods>
+</class>
+<class name="bible.ReportTest">
+<methods>
+<include name="TC_20deductionhistoryreport"></include>
+</methods>
+</class>
+<!-- --><class name="bible.TimesheetTest">
+<methods>
+<include name="generateslip"></include>
+<include name="generateinvoice"></include>
+<include name="Approvetimesheet"></include>
+</methods>
+</class>
+<!-- --><class name="bible.WorkerTest">
+<methods>
+<include name="workerpageload"></include>
+<include name="workercreation"></include>
+<include name="enterworkerbankdetails"></include>
+<include name="workersearchfirstname"></include>
+<include name="enterworkerbankdetails"></include>
+<include name="workerdelete"></include>
+</methods>
+</class>
+
+
+</classes>
+
+
+
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
